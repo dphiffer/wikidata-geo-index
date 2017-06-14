@@ -21,6 +21,7 @@ make
 
 This will do the following:
 
+* Uses PHP Composer to install dependencies
 * Downloads the [current Wikidata JSON dump](https://www.wikidata.org/wiki/Wikidata:Database_download#JSON_dumps_.28recommended.29)
 * Uses [JsonDumpReader](https://github.com/JeroenDeDauw/JsonDumpReader) to parse the JSON file
 * Indexes all entities that contain geo coordinates to a SQLite table
