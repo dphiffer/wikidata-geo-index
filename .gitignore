@@ -1,0 +1,7 @@
+/cache
+/vendor
+/composer.lock
+/latest-all.json.bz2
+/wikidata.db
+/wikidata.db.bak
+.DS_Store
