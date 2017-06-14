@@ -57,7 +57,7 @@ CREATE INDEX label_language ON entity_label
 ;
 ```
 
-### How to query the index
+## How to query the index
 
 Once you create the index, you can use it to find entities in Wikidata by their lat/lng coordinates. The index is saved in SQLite format, so if you know SQL this should seem familiar.
 
@@ -78,3 +78,13 @@ sqlite> .quit
 ```
 
 The `.mode` and `.output` SQLite commands will let you generate, for example, a [CSV file](https://gist.github.com/dphiffer/39388701370b26441cb70b665f73ed55) of Wikidata entities that fall in the bounding box of the [Mission District](https://whosonfirst.mapzen.com/spelunker/id/1108830809/) in San Francisco.
+
+## Can I just have a copy of the SQLite db?
+
+Yeah, sure thing: [https://phiffer.org/etc/wikidata.db.bz2](https://phiffer.org/etc/wikidata.db.bz2)
+
+You'll need [bzip2](http://www.bzip.org/) to unpack the database. It is 314MB compressed.
+
+## Props
+
+Thanks to the [Wikidata Project](https://www.wikidata.org/) and [Jeroen De Dauw](https://github.com/JeroenDeDauw) for maintaining the [JSON Dump Reader](https://github.com/JeroenDeDauw/JsonDumpReader).
